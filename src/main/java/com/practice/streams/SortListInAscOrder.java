@@ -11,6 +11,7 @@ public class SortListInAscOrder {
 
         list.stream().sorted().forEach(System.out::println);
 
+        System.out.println("Hello World");
 
 
     }
