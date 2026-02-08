@@ -13,16 +13,12 @@ public class FrequencyOfCharacters
         public static void main(String []args)
         {
 
-
-
             List<Character> list=List.of('e','a','b','e','a','c','f');
 
             Map<Character,Long> frequencyList= list.stream().
                     collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 
             frequencyList.forEach((k,v)->System.out.println("Key "+k+" value "+v));
-
-
 
             String str="I am a java Springboot microservice developer and java is an amazing Language";
 
@@ -37,30 +33,20 @@ public class FrequencyOfCharacters
 
             System.out.println(newList);
 
-
-
-
             // Character frequency
 //   Map<Character, Long> charFrequency =str.replaceAll("\\s+", "").chars()
 //                            .mapToObj(c -> (char) c)
 //                            .collect(Collectors.groupingBy(Function.identity(),
 //                                    Collectors.counting()));
 
-
-
-
             Map<String, Long> frequencyMap1=newList.stream()
                     .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 
-
             frequencyMap1.forEach((k,v)->System.out.println("Key "+k+" Value "+v));
-
         }
 
         int []arr=new int[]{1,3,6,1,7,2,6,3,6};
 
         Map<Integer, Long> intStream= Arrays.stream(arr).boxed().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
-
-
 
 }
