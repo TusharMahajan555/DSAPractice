@@ -24,7 +24,8 @@ public class GroupEmployeesByDept
                 new Employess("kanav","Technical"));
 
         Map<String,List<String>> peopleByDepartment=employee.stream()
-                .collect(Collectors.groupingBy(Employess::getDepartment,Collectors.mapping(Employess::getName,Collectors.toList())));
+                .collect(Collectors.groupingBy(Employess::getDepartment,
+                        Collectors.mapping(Employess::getName,Collectors.toList())));
 
         System.out.println(peopleByDepartment);
 }

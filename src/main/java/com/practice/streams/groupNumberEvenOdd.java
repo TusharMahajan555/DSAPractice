@@ -12,7 +12,8 @@ public class groupNumberEvenOdd
         List<Integer> list=List.of(1,4,2,5,9,6,8);
 
 
-        Map<Boolean, List<Integer>> newGroup=list.stream().collect(Collectors.partitioningBy(x->x%2==0));
+        Map<Boolean, List<Integer>> newGroup=list.stream()
+                .collect(Collectors.partitioningBy(x->x%2==0));
 
         System.out.println(newGroup.get(true));
         System.out.println(newGroup.get(false));
