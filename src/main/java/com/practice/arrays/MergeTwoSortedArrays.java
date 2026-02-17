@@ -11,10 +11,10 @@ public class MergeTwoSortedArrays
 
         int m=3;
         int n=3;
-
         int i=0;
         int j=0;
         int k=0;
+
         int arr[]=new int[m+n];
 
         while(i<m && j<n)
