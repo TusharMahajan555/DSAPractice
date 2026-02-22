@@ -31,6 +31,7 @@ class Solution {
         }
         System.out.println("null");
     }
+
 }
 
 public class DeleteLinkedListHead {
